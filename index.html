@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AI Ops Dashboard</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div><p class="eyebrow">WORKFORCE CONTROL CENTER</p><h1>AI Operations Dashboard</h1><p class="muted">Monitor agent health, workload, and recent automation events.</p></div><button id="refresh">Refresh data</button></header>
+    <section class="metrics" id="metrics"></section>
+    <section class="grid"><div class="panel"><div class="panel-title"><h2>Agent health</h2><span class="live"><i></i> Live demo</span></div><div id="agents"></div></div><div class="panel"><div class="panel-title"><h2>Recent events</h2><span class="muted">Last 24 hours</span></div><div id="events"></div></div></section>
+    <footer>Designed for a Supabase + n8n integration. Replace the demo data layer in <code>app.js</code> with authenticated queries.</footer>
+  </main><script src="app.js"></script>
+</body></html>
